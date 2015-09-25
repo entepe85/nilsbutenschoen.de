@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parallax Scrolling at 60 Fps"
+title: "Parallax Scrolling bei 60 fps"
 date: 2015-09-25T11:00:50+02:00
 ---
 
