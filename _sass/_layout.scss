@@ -2,15 +2,25 @@
  * Site header
  */
 .site-header {
-    background: url('#{$base-url}/_assets/img/heda.jpg') center center no-repeat;
-    background-size: cover;
-    border-top: 5px solid $brand-color;
+    background: transparent;
     border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $brand-color;
     min-height: 56px;
-
+    overflow: hidden;
     // Positioning context for the mobile navigation icon
     position: relative;
     text-align: center;
+    z-index: 10;
+    .site-header-background {
+        background: url('#{$base-url}/_assets/img/heda.jpg') center center no-repeat;
+        background-size: cover;
+        bottom: -2.5vh;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -2.5vh;
+        z-index: -9999;
+    }
 }
 
 .site-title {
