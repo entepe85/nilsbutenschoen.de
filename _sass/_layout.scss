@@ -223,6 +223,13 @@
             opacity: 0.1;
         }
     }
+    a:hover {
+        svg {
+            .cls-2 {
+                fill: darken($text-color, 10%);
+            }
+        }
+    }
 }
 
 
