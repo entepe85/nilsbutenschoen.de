@@ -132,7 +132,12 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: lighten($brand-color, 42%);
+    td.code &,
+    td.gutter & {
+        border: none;
+        margin-bottom: 0;
+    }
 }
 
 code {
