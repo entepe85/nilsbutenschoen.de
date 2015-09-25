@@ -4,19 +4,24 @@ layout: default
 
 <div class="home">
 
-  <h1 class="post-title">Blog</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%d.%m.%Y" }}{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include rss.svg %} RSS</a></p>
+  <h1 class="post-title">Hallo, ich bin Nils.</h1>
+  <img src="{{ "/_assets/img/nils-portrait.jpg" | prepend: site.url }}" srcset="{{ "/_assets/img/nils-portrait-2x.jpg"  | prepend: site.url }} 2x" class="home-portrait">
+  <div class="home container fluid">
+    <div class="row">
+        <p>
+            Gestatten: Codecat, Pixeljunkie und begeisterter Musiker. Außerdem interessiere ich mich unter anderem für Fotografie, Audiotechnik und Videospiele. Auch ist mir der gelegentliche sprichwörtliche Blick über den Tellerrand wichtig, um inspiriert zu bleiben.
+        </p>
+        <p>
+            Beruflich beschäftige ich mich zur Zeit mit Webentwicklung und -design und bin bei der Kieler Agentur <a href="http://www.solades.de/" target="_blank">SOLADES</a> angestellt. Alles weitere zu meinem beruflichen Werdegang findet ihr in meiner Vita.
+        </p>
+    </div>
+    <div class="row">
+        <p>
+            Darüber hinaus findet man mich, quasi als Selfmade-Tontechniker, immer mal wieder bei Veranstaltungen im Kieler Raum, z.B. im <a href="http://savoy-bordesholm.de/" target="_blank">Kinoverein Savoy Bordesholm</a> oder zuletzt beim <a href="http://www.kielnet-bhs.de/" target="_blank">KielNET Bootshafensommer</a>, wo ich eifrig die Fader bediene.
+        </p>
+        <p>
+            Im Juli 2013 habe ich den Master of Arts in Multimedia Production erworben. Meine Master-Thesis hat den Titel &raquo;Client Side Animations - Möglichkeiten und Grenzen moderner Webstandards&laquo;.
+        </p>
+    </div>
+    </div>
 </div>

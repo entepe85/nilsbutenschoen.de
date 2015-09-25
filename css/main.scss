@@ -6,9 +6,11 @@
 
 
 // Our variables
-$base-font-family: "Lato", Helvetica, Arial, sans-serif;
+$base-font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+$headline-font-family: "Dosis", sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 300;
+$headline-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -16,7 +18,7 @@ $base-url: "http://ntblog.local";
 
 $spacing-unit:     30px;
 
-$text-color:       #2c3e50;
+$text-color:       rgb(52, 73, 94);
 $background-color: #ecf0f1;
 $brand-color:      #3498db;
 
@@ -50,8 +52,10 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    url(https://fonts.googleapis.com/css?family=Lato:400,300,700),
+    url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700),
+    url(https://fonts.googleapis.com/css?family=Dosis:300),
     "base",
     "layout",
-    "syntax-highlighting"
+    "syntax-highlighting",
+    "home"
 ;
