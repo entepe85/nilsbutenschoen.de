@@ -9,7 +9,6 @@
     overflow: hidden;
     // Positioning context for the mobile navigation icon
     position: relative;
-    text-align: center;
     z-index: 10;
     .site-header-background {
         background: url('#{$base-url}/_assets/img/heda.jpg') center center no-repeat;
@@ -24,12 +23,15 @@
 }
 
 .site-title {
-    display: inline-block;
+    display: block;
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
+    margin: 0 auto;
     margin-bottom: 0;
-
+    max-width: 256px;
+    text-align: center;
+    width: auto;
     &:active,
     &:visited {
         color: $grey-color-dark;
