@@ -211,3 +211,18 @@ pre {
         }
     }
 }
+
+
+/*
+ * Drop cap
+ */
+.drop-cap {
+    display: block;
+    font-family: $headline-font-family;
+    font-style: normal;
+    font-size: 3.33em;
+    float: left;
+    margin: .13em .1em 0 0;
+    line-height: .67em;
+    font-weight: 100;
+}

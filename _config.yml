@@ -11,3 +11,5 @@ github_username:  entepe85
 
 # Build settings
 markdown: kramdown
+sass:
+    style: compressed

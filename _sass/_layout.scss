@@ -30,7 +30,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
 
-    &,
+    &:active,
     &:visited {
         color: $grey-color-dark;
     }
