@@ -1,4 +1,4 @@
-/*global window, document, setTimeout */
+/*global window, document, setTimeout, console */
 (function () {
     'use strict';
     var scrollTop = 0,
