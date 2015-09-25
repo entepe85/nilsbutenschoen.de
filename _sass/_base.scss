@@ -226,3 +226,24 @@ pre {
     line-height: .67em;
     font-weight: 100;
 }
+
+
+/*
+ * Utility for round images
+ */
+.circle-image {
+    border-radius: 100%;
+    shape-outside: circle();
+    &.left {
+        float: left;
+        margin: 0 1.5em 1em 0;
+    }
+    &.right {
+        float: right;
+        margin: 0 0 1em 1.5em;
+    }
+    @include media-query($on-phone) {
+        height: auto;
+        max-width: 50%;
+    }
+}
