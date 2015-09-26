@@ -3,7 +3,9 @@
     'use strict';
     var scrollTop = 0,
         forEach = Array.prototype.forEach,
-        parallaxImages = document.querySelectorAll('.parallax-image');
+        parallaxImages = document.querySelectorAll('.parallax-image'),
+        navItems = document.querySelectorAll('.site-nav a.page-link'),
+        pageUrl = document.URL;
 
     // Cross browser requestAnimationFrame
     window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (f) {
@@ -40,6 +42,15 @@
         scrollTop = window.pageYOffset;
         window.requestAnimationFrame(tick);
     }
+
+
+    // Function to check if a menu item is active, because the site is static
+    forEach.call(navItems, function (item) {
+        var itemLink = item.getAttribute('href');
+        if (pageUrl.indexOf(itemLink) > -1) {
+            item.classList.add('active');
+        }
+    });
 
 
     window.addEventListener('scroll', function () { // on page scroll

@@ -59,6 +59,15 @@
         &:not(:last-child) {
             margin-right: 20px;
         }
+
+        &:hover {
+            color: $brand-color;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $brand-color;
+        }
     }
 
     @include media-query($on-palm) {
