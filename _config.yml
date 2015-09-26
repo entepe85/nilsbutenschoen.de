@@ -5,7 +5,7 @@ email: moin@nilsbutenschoen.de
 description: > # this means to ignore newlines until "baseurl:"
     Blog und digitale Visitenkarte von Nils Torbjörn Butenschön. Webentwickler, Musiker und ambitionierter Hobby-Fotograf aus Kiel an der schönen Ostseeküste.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ntblog.local" # the base hostname & protocol for your site
+url: "http://entepe85.github.io" # the base hostname & protocol for your site
 twitter_username: NilssonT
 github_username:  entepe85
 
