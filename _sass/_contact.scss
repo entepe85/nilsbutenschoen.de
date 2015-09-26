@@ -12,6 +12,9 @@
     @include flexbox();
     @include media-query($on-phone) {
         @include flexflow(column wrap);
+        > div {
+            @include flex(1 0 auto);
+        }
     }
     > div {
         @include flex(0 0 50%);
