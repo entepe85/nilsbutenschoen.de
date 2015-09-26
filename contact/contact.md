@@ -24,12 +24,12 @@ permalink: /kontakt/
                 <form action="//formspree.io/moin@nilsbutenschoen.de" method="POST" class="pure-form ajax-form">
                     <formbody>
                         <fieldset class="pure-group">
-                            <input type="text" class="pure-input-1" placeholder="Name" name="name">
-                            <input type="email" class="pure-input-1" placeholder="E-Mail" name="_replyto">
+                            <input type="text" class="pure-input-1" placeholder="Name" name="name" required>
+                            <input type="email" class="pure-input-1" placeholder="E-Mail" name="_replyto" required>
                         </fieldset>
                         <fieldset class="pure-group">
                             <input type="text" class="pure-input-1" placeholder="Betreff" name="_subject">
-                            <textarea class="pure-input-1" placeholder="Nachricht" name="message"></textarea>
+                            <textarea class="pure-input-1" placeholder="Nachricht" name="message" rows="6" required></textarea>
                         </fieldset>
                         <input type="text" class="pure-input-1" name="_gotcha" style="display:none">
                         <button type="submit" class="pure-button"><i class="fa fa-paper-plane-o"></i> Abschicken</button>
