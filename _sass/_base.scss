@@ -242,6 +242,7 @@ pre {
  */
 .circle-image {
     border-radius: 100%;
+    box-shadow: inset 0 0 5px fade-out($text-color, .33);
     shape-outside: circle();
     &.left {
         float: left;

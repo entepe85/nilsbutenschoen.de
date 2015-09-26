@@ -8,7 +8,7 @@ permalink: /kontakt/
     <div class="row">
         <div class="contact-wrap">
             <div class="info-wrap">
-                <h2>Nils Butenschön, M.A.</h2>
+                <h2>Nils Torbjörn Butenschön, M.A.</h2>
                 <p>
                     Multimedia Production
                 </p>
