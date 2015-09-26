@@ -5,7 +5,7 @@ permalink: /music/
 ---
 
 <div class="music">
-    <img class="circle-image right" src="{{ "/_assets/img/music.jpg" | prepend: site.url }}" srcset="{{ "/_assets/img/music-2x.jpg" | prepend: site.url }} 2x">
+    <img class="circle-image right" src="{{ "/assets/img/music.jpg" | prepend: site.url }}" srcset="{{ "/assets/img/music-2x.jpg" | prepend: site.url }} 2x">
     <div class="row">
         <p>
             <blockquote>Die Musik drückt das aus, was nicht gesagt werden kann und worüber zu schweigen unmöglich ist.</blockquote><cite>Victor Hugo</cite>
