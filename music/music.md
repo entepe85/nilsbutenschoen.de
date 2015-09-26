@@ -4,7 +4,7 @@ title: Musik
 permalink: /music/
 ---
 
-<div class="music container fluid">
+<div class="music">
     <div class="row">
         <p>
             <blockquote>Die Musik drückt das aus, was nicht gesagt werden kann und worüber zu schweigen unmöglich ist.</blockquote><cite>Victor Hugo</cite>

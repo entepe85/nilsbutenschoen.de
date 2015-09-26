@@ -1,0 +1,54 @@
+// Circular loading animation for submit buttons
+@keyframes submitted {
+    0% {
+        @include transform(scale(1));
+    }
+    100% {
+        @include transform(scale(5));
+    }
+}
+
+.contact-wrap {
+    @include flexbox();
+    @include media-query($on-phone) {
+        @include flexflow(column wrap);
+    }
+    > div {
+        @include flex(0 0 50%);
+    }
+}
+
+.ajax-form {
+    button[type="submit"] {
+        overflow: hidden;
+        position: relative;
+        &::before {
+            border: 3px solid $background-color;
+            border-radius: 100%;
+            bottom: 0;
+            content: '';
+            left: 33%;
+            position: absolute;
+            right: 33%;
+            top: 0;
+            @include transform(scale(0));
+        }
+        &.sending {
+            &::before {
+                @include animation(submitted 1s infinite);
+            }
+        }
+    }
+    .message {
+        border-radius: 5px;
+        color: $background-color;
+        margin: 1em 0;
+        padding: 5px 10px;
+        &.success {
+            background-color: $success-color;
+        }
+        &.error {
+            background-color: $error-color;
+        }
+    }
+}

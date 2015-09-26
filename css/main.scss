@@ -21,6 +21,8 @@ $spacing-unit:     30px;
 $text-color:       rgb(52, 73, 94);
 $background-color: #ecf0f1;
 $brand-color:      #3498db;
+$success-color:    #27ae60;
+$error-color:      #c0392b;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -54,9 +56,12 @@ $on-laptop:        800px;
 @import
     url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700),
     url(https://fonts.googleapis.com/css?family=Dosis:300),
+    "mixins",
     "base",
     "layout",
     "syntax-highlighting",
     "home",
-    "blog"
+    "blog",
+    "buttons",
+    "contact"
 ;

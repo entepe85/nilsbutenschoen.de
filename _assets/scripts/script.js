@@ -1,11 +1,12 @@
-/*global window, document, setTimeout, console */
+/*global window, document, setTimeout, console, XMLHttpRequest, FormData */
 (function () {
     'use strict';
     var scrollTop = 0,
         forEach = Array.prototype.forEach,
         parallaxImages = document.querySelectorAll('.parallax-image'),
         navItems = document.querySelectorAll('.site-nav a.page-link'),
-        pageUrl = document.URL;
+        pageUrl = document.URL,
+        ajaxForm = document.querySelector('.ajax-form');
 
     // Cross browser requestAnimationFrame
     window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (f) {
@@ -52,6 +53,49 @@
         }
     });
 
+
+    if (ajaxForm !== 'undefined' && ajaxForm) {
+        ajaxForm.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            ev.stopPropagation();
+            var xhr = new XMLHttpRequest(),
+                formData = new FormData(ajaxForm),
+                submitButton = ajaxForm.querySelector('button[type="submit"]'),
+                message = {},
+                statusMessage = document.createElement('div');
+            message.success = 'Das hat geklappt. Vielen Dank für die Nachricht!';
+            message.error = 'Oje, da ist leider etwas schiefgelaufen.';
+            statusMessage.className = 'message';
+            ajaxForm.appendChild(statusMessage);
+            // Serialize form input values (URI encoded) into an array for later!
+            forEach.call(ajaxForm.querySelectorAll('input, select, textarea'), function (input) {
+                // Only store input values in array if the input is neither disabled nor empty
+                if (!input.getAttribute('disabled') && input.value !== '') {
+                    formData[input.getAttribute('name')] = input.value;
+                }
+            });
+            console.log(formData);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 1) {
+                    // Add visual feedback for the AJAX request being sent!
+                    submitButton.classList.add('sending');
+                }
+                if (xhr.readyState === 4) {
+                    submitButton.classList.remove('sending');
+                    if (xhr.status === 200) {
+                        statusMessage.innerHTML = message.success;
+                        statusMessage.classList.add('success');
+                    } else {
+                        statusMessage.innerHTML = message.error;
+                        statusMessage.classList.add('error');
+                    }
+                }
+            };
+            xhr.open('POST', ajaxForm.getAttribute('action'), true);
+            xhr.setRequestHeader('accept', 'application/json');
+            xhr.send(formData);
+        });
+    }
 
     window.addEventListener('scroll', function () { // on page scroll
         scrollTop = window.pageYOffset;
