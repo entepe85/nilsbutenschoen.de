@@ -25,6 +25,7 @@
     button[type="submit"] {
         overflow: hidden;
         position: relative;
+        width: 100%;
         &::before {
             border: 3px solid $background-color;
             border-radius: 100%;
