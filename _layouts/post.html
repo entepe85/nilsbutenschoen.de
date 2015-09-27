@@ -12,6 +12,16 @@ layout: default
     {{ content }}
   </div>
 
+    <div class="sharing text-right">
+        <h3>Sharing is caring</h3>
+        <p>
+            <a href="http://twitter.com/home?status={{ page.title }} - {{ site.url }}{{ page.url }} via @NilssonT" title="Bei Twitter teilen" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }}" target="_blank" title="Bei Facebook teilen"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&mini=true&title={{ page.title }}" target="_blank" title="Bei LinkedIn teilen"><i class="fa fa-linkedin"></i></a>
+            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=de" target="_blank" title="Bei Google+ teilen"><i class="fa fa-google-plus"></i></a>
+        </p>
+    </div>
+
   {% if page.comments_enabled == 1 %}
   <div id="disqus_thread"></div>
     <script type="text/javascript">
