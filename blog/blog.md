@@ -14,6 +14,7 @@ permalink: /blog/
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
+      {% for category in post.categories %}<span class="category-label">{{ category }}</span>{% endfor %}
     </li>
   {% endfor %}
 </ul>

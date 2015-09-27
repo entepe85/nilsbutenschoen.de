@@ -298,3 +298,15 @@
         }
     }
 }
+
+/*
+ * Icon lists
+ */
+.fa-ul {
+    margin-left: 0;
+    li {
+        .fa-li {
+            position: static;
+        }
+    }
+}

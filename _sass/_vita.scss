@@ -1,0 +1,30 @@
+.vita {
+    .vita-label {
+        background: $brand-color;
+        border: 1px solid darken($brand-color, 5%);
+        border-radius: 5px;
+        color: $background-color;
+        display: inline-block;
+        font-size: 0.8em;
+        margin: {
+            bottom: 0.5em;
+            right: 0.5em;
+            top: 0.5em;
+        }
+        padding: 0 0.5em;
+    }
+    .skills-list {
+        @include columns(2, 1em);
+        @include media-query($on-phone) {
+            @include columns(1, 0);
+        }
+        font-size: 1.33em;
+        overflow: visible;
+        li {
+            margin: 0.33em 0;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

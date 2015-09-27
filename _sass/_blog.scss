@@ -1,0 +1,27 @@
+.post-meta {
+    &::before {
+        content: '\f017';
+        display: inline-block;
+        font-family: 'FontAwesome';
+        padding-right: 0.33em;
+    }
+}
+
+.post-list {
+    h2 {
+        margin-bottom: 0;
+    }
+    .category-label {
+        background: $brand-color;
+        border: 1px solid darken($brand-color, 5%);
+        border-radius: 5px;
+        color: $background-color;
+        display: inline-block;
+        font-size: 0.8em;
+        margin: {
+            right: 0.5em;
+            top: 0.5em;
+        }
+        padding: 0 0.5em;
+    }
+}

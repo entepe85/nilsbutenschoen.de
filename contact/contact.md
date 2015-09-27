@@ -4,7 +4,7 @@ title: Kontakt
 permalink: /kontakt/
 ---
 
-<div class="contact">
+<section class="contact">
     <div class="row">
         <div class="contact-wrap">
             <div class="info-wrap">
@@ -38,4 +38,4 @@ permalink: /kontakt/
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -3,6 +3,8 @@ layout: post
 title: "Parallax Scrolling bei 60 fps"
 date: 2015-08-09T16:00:50+02:00
 author: Nils
+categories: javascript code
+comments_enabled: 1
 ---
 
 [Parallax-Effekte](https://vimeo.com/28709243) auf Websites sind ein [anhaltender Trend](http://t3n.de/news/parallax-scrolling-beispiele-423046/) und ein toller Eyecatcher. Daher sollte die Option eines Parallax-Effekts auch in die unlängst durch mich entwickelten Inhaltselemente für das Open Source CMS [Contao](http://www.contao.org) einfließen.

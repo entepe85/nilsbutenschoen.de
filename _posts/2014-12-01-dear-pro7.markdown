@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "IMHO: Fernsehen und 'neue' Medien"
+date:   2014-12-01 09:00:00
+categories: short ymmv
+comments_enabled: 0
+author: Nils
+---
+
+<div class="kicker"><em>Liebes Pro7-Team,  
+als ich am vergangenen Wochenende mehr zufällig als gewollt das zu epischer Länge ausgewalzte TV Total Turmspringen 2014 sah, dachte ich so bei mir: Warum werden zu diesem Event YouTube-"Stars" eingeladen, um jung & trendy zu wirken, gleichzeitig aber zeigen die Moderatoren, dass sie den Umgang mit Internet-Prominenz nicht beherrschen?</em></div>
+
+<span class="drop-cap">A</span>lso, mal im Ernst: Sowohl Matze Knop als auch Sophia Thomalla wirkten bei der An- bzw. Abmoderation des Sprungs eines Mitglieds der Youtube-Truppe [ApeCrime][f15ec298] ungefähr so hilflos wie unsere Bundes-Mutti bei der Erklärung des Internets zum Neuland für uns alle.  
+Man soll es ja kaum glauben, aber auch Menschen, die durch diese neuartigen Medien wie das Internet (["Das setzt sich eh nicht durch!"][7cde01c3]) zur einer gewissen Bekanntheit gelangt sind, kommen gelegentlich raus an die frische Luft und verbringen nicht den ganzen Tag im Netz.
+
+Ergo: Setzen, 6! Oder, auf Internetsprech: #OMG #FAIL
+
+  [f15ec298]: https://www.youtube.com/user/ApeCrimeReloaded "Youtube-Channel von ApeCrime"
+  [7cde01c3]: http://www.storyfilter.com/war-ja-klar-das-internet-setzt-sich-eh-nicht-durch/6936/ "Storyfilter.com: Das Internet setzt sich eh nicht durch"
