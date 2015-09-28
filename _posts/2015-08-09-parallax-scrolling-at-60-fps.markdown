@@ -23,7 +23,7 @@ Um einen Parallax-Effekt für Hintergrundgrafiken zu implementieren, gibt es nun
 1. Das Element absolut positionieren und das `top` Attribut in Abhängigkeit des Scrolling verändern
 2. Die Hintergrundposition des Elements in Abhängigkeit des Scrollings verändern
 
-Bei diesen beiden Ansätzen entstehen Performance-Probleme in Form von Ruckeln, also einer [Bildrate unter 60 Bildern pro Sekunde (fps)](http://nilsbutenschoen.de/#/blog/posts/60-fps-and-the-web), weil die CPU in Verbindung mit dem Browser die Berechnung zur Darstellung der Webseite übernimmt, diese ist aufgrund ihrer Architektur aber nicht auf das Berechnen von Bildschirmgrafik optimiert. Generell ist zu beachten, dass bei der Darstellung von animierten Inhalten möglichst wenig Neuberechnungen des Layouts vorgenommen werden.
+Bei diesen beiden Ansätzen entstehen Performance-Probleme in Form von Ruckeln, also einer [Bildrate unter 60 Bildern pro Sekunde (fps)](http://nilsbutenschoen.de/web/animations/2015/03/08/60-fps-im-web.html), weil die CPU in Verbindung mit dem Browser die Berechnung zur Darstellung der Webseite übernimmt, diese ist aufgrund ihrer Architektur aber nicht auf das Berechnen von Bildschirmgrafik optimiert. Generell ist zu beachten, dass bei der Darstellung von animierten Inhalten möglichst wenig Neuberechnungen des Layouts vorgenommen werden.
 
 Die Seite [CSS Triggers](http://www.csstriggers.com) gibt in diesem Zusammenhang einen sehr guten Überblick, indem sie darstellt welche Rendervorgänge durch die Veränderung der CSS-Eigenschaften angestoßen werden. Dort ist etwa zu sehen, dass die Veränderung der Eigenschaft `top` alle drei Berechnungsdurchgänge benötigt, eine Verwendung von `transform` jedoch nur das sog. Compositing - also das Zusammensetzen der Bildschirminhalte durch den Grafikprozessor.
 
@@ -93,3 +93,5 @@ window.addEventListener('scroll', function () { // on page scroll
 Idealerweise ist natürlich noch zu überprüfen, ob sich das Element, dessen Position sich verändert auch im Viewport - also für den Benutzer zu sehen - ist, um alternativ gar nicht erst (Neu)Berechnungen durchführen zu müssen.
 
 Viel Spaß beim Testen!
+
+P.S. Die vorgestellte JavaScript-Funktion ist in modifizierter Fassung auch auf dieser Website im Einsatz.
