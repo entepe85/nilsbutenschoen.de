@@ -99,8 +99,13 @@
         }
 
         .trigger {
+            @include columns(2, 0);
             clear: both;
             display: none;
+            text-align: center;
+            > .menu-icon {
+                display: none;
+            }
         }
 
         &:hover .trigger {
@@ -115,7 +120,7 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
+            margin-left: 0;
         }
     }
 }

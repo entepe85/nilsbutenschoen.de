@@ -37,6 +37,14 @@
             top: 0;
             @include transform(scale(0));
         }
+        i.fa {
+            @include transition(all 1s cubic-bezier(1,0,.33,1));
+        }
+        &:hover {
+            i.fa {
+                @include transform(translate(167%,-222%));
+            }
+        }
         &.sending {
             &::before {
                 @include animation(submitted 1s infinite);
