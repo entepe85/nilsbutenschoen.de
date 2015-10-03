@@ -3,7 +3,10 @@
         content: '\f133';
         display: inline-block;
         font-family: 'FontAwesome';
-        padding-right: 0.33em;
+        padding-right: 0.167em;
+        ul.post-list & {
+            padding-right: 0.33em;
+        }
     }
     span[itemprop="author"] {
         &::before {
