@@ -67,14 +67,6 @@
             message.error = 'Oje, da ist leider etwas schiefgelaufen.';
             statusMessage.className = 'message';
             ajaxForm.appendChild(statusMessage);
-            // Serialize form input values (URI encoded) into an array for later!
-            forEach.call(ajaxForm.querySelectorAll('input, select, textarea'), function (input) {
-                // Only store input values in array if the input is neither disabled nor empty
-                if (!input.getAttribute('disabled') && input.value !== '') {
-                    formData[input.getAttribute('name')] = input.value;
-                }
-            });
-            console.log(formData);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 1) {
                     // Add visual feedback for the AJAX request being sent!
@@ -83,6 +75,7 @@
                 if (xhr.readyState === 4) {
                     submitButton.classList.remove('sending');
                     if (xhr.status === 200) {
+                        submitButton.setAttribute('disabled', 'disabled');
                         statusMessage.innerHTML = message.success;
                         statusMessage.classList.add('success');
                     } else {
