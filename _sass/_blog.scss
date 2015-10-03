@@ -1,31 +1,12 @@
-.post-meta {
-    &::before {
-        content: '\f133';
-        display: inline-block;
-        font-family: 'FontAwesome';
-        padding-right: 0.167em;
-        ul.post-list & {
-            padding-right: 0.33em;
-        }
-    }
-    span[itemprop="author"] {
-        &::before {
-            content: '\f007';
-            display: inline-block;
-            font-family: 'FontAwesome';
-            padding-right: 0.33em;
-        }
-    }
-}
-
 .post-list {
     h2 {
         margin-bottom: 0;
     }
     .category-label {
         background: $brand-color;
-        border: 1px solid darken($brand-color, 5%);
-        border-radius: 5px;
+        border: 1px solid darken($brand-color, 5%) {
+            radius: 5px;
+        }
         color: $background-color;
         display: inline-block;
         font-size: 0.8em;
