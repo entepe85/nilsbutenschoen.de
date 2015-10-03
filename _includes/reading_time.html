@@ -1,0 +1,9 @@
+<span class="reading-time" title="Geschätzte Lesezeit">
+    <i class="fa fa-hourglass-o"></i> ~
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+        1 Minute
+    {% else %}
+        {{ words | divided_by:180 }} Minuten
+    {% endif %}
+</span>

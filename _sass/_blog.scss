@@ -1,9 +1,17 @@
 .post-meta {
     &::before {
-        content: '\f017';
+        content: '\f133';
         display: inline-block;
         font-family: 'FontAwesome';
         padding-right: 0.33em;
+    }
+    span[itemprop="author"] {
+        &::before {
+            content: '\f007';
+            display: inline-block;
+            font-family: 'FontAwesome';
+            padding-right: 0.33em;
+        }
     }
 }
 
