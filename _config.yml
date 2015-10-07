@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
     Blog und digitale Visitenkarte von Nils Torbjörn Butenschön. Webentwickler, Musiker und ambitionierter Hobby-Fotograf aus Kiel an der schönen Ostseeküste.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nilsbutenschoen.de" # the base hostname & protocol for your site
-twitter_username: NilssonT
+twitter_username: DerNerddeutsche
 github_username:  entepe85
 
 # Build settings
