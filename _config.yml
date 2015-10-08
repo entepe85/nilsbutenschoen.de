@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nilsbutenschoen.de" # the base hostname & protocol for your site
 twitter_username: DerNerddeutsche
 github_username:  entepe85
+instagram_username: der_nerddeutsche
 
 # Build settings
 markdown: kramdown
