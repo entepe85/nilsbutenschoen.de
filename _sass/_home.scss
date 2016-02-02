@@ -1,8 +1,10 @@
 .home-portrait {
-    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);;
     float: right;
     margin: 0 0 1em 1.5em;
-    shape-outside: circle();
+    shape-outside: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);;
     @include media-query($on-phone) {
         height: auto;
         max-width: 50%;
