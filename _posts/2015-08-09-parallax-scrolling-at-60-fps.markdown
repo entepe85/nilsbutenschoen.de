@@ -50,10 +50,11 @@ Und in (S)CSS:
     min-height: 400px;
     position: relative;
     .parallax-image {
+        height: auto;
         left: 0;
         position: absolute;
+        right: 0;
         top: 0;
-        transform: translate(-50%,-50%);
     }
 }
 {% endhighlight %}
