@@ -95,4 +95,4 @@ Idealerweise ist natürlich noch zu überprüfen, ob sich das Element, dessen Po
 
 Viel Spaß beim Testen!
 
-P.S. Die vorgestellte JavaScript-Funktion ist in modifizierter Fassung auch auf dieser Website im Einsatz.
+P.S.: Die vorgestellte JavaScript-Funktion ist in modifizierter Fassung auch auf dieser Website im Einsatz. Allerdings verwende ich eine Hintergrundgrafik für ein absolut positioniertes Element, welches dann transformiert wird. Das liegt daran, dass die CSS-Eigenschaft `background-size: cover` bessere Browserunterstützung hat als das (relativ neue) `object-fit: cover` und dies die Darstellung des Bildes erheblich vereinfacht.
