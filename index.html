@@ -6,6 +6,20 @@ layout: default
 
   <h1 class="post-title">Hallo, ich bin Nils.</h1>
   <img src="{{ "/assets/img/nils-portrait.jpg" | prepend: site.url }}" srcset="{{ "/assets/img/nils-portrait-2x.jpg"  | prepend: site.url }} 2x" class="home-portrait right">
+  <svg width="0" height="0">
+      <defs>
+        <clipPath id="polygonPath">
+            <polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="238.5,64 127.756,-0.249 17.5,64 17.5,191.999 
+	128.243,255.983 238.5,192 "/>
+        </clipPath>
+      </defs>
+  </svg>
+  <style>
+      .home-portrait {
+          clip-path: url(#polygonPath);
+          -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+      }
+  </style>
   <div class="home container fluid">
     <div class="row">
         <p>
