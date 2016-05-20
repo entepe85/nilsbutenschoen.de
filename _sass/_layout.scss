@@ -11,10 +11,11 @@
     position: relative;
     z-index: 10;
     .site-header-background {
-        background: url('#{$base-url}/assets/img/heda.jpg') center center no-repeat;
+        background: url('#{$base-url}/assets/img/header.jpg') center center no-repeat;
         background-size: cover;
         bottom: -2.5vh;
         left: 0;
+        opacity: 0.8;
         position: absolute;
         right: 0;
         top: -2.5vh;
