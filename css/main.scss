@@ -6,8 +6,8 @@
 
 
 // Our variables
-$base-font-family: "Titillium Web", Helvetica, Arial, sans-serif;
-$headline-font-family: "Dosis", sans-serif;
+$base-font-family: "Lato", Helvetica, Arial, sans-serif;
+$headline-font-family: "Oswald", sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 300;
 $headline-font-weight: 300;
@@ -18,13 +18,15 @@ $base-url: "https://nilsbutenschoen.de";
 
 $spacing-unit:     30px;
 
-$text-color:       rgb(52, 73, 94);
-$background-color: #ecf0f1;
-$brand-color:      #3498db;
+$text-color:       #212121;
+$background-color: #fbfbfb;
+$brand-color:      #ffc107;
+$brand-color-dark: #ff9800;
+$headline-color:   $text-color;
 $success-color:    #27ae60;
 $error-color:      #c0392b;
 
-$grey-color:       #828282;
+$grey-color:       #727272;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -54,8 +56,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700),
-    url(https://fonts.googleapis.com/css?family=Dosis:300),
+    url('https://fonts.googleapis.com/css?family=Lato:300|Oswald:300'),
     "mixins",
     "pure-min",
     "base",
