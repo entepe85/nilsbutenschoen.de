@@ -62,12 +62,12 @@
         }
 
         &:hover {
-            color: $brand-color;
+            color: $brand-color-dark;
             text-decoration: none;
         }
 
         &.active {
-            color: $brand-color;
+            color: $brand-color-dark;
         }
     }
 
