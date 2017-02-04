@@ -13,8 +13,8 @@ permalink: /kontakt/
                     Multimedia Production
                 </p>
                 <p>
-                    Dieselweg 2<br />
-                    24159 Kiel
+                    Esmarchstr. 22<br />
+                    24105 Kiel
                 </p>
                 <p>
                     <a href="mailto:moin@nilsbutenschoen.de"><i class="fa fa-envelope"></i> moin@nilsbutenschoen.de</a>
