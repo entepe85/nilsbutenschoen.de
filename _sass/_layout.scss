@@ -11,7 +11,7 @@
     position: relative;
     z-index: 10;
     .site-header-background {
-        background: url('#{$base-url}/assets/img/header-v3.jpg') center center no-repeat;
+        background: url('#{$base-url}/assets/img/header-v3-optimized.jpg') center center no-repeat;
         background-size: cover;
         bottom: -2.5vh;
         left: 0;
@@ -148,7 +148,7 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
+    font-size: 13px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
